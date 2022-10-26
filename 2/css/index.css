@@ -1,0 +1,252 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+   }
+
+   body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+   }
+   .content {
+    flex: 1 0 auto;
+   }
+   .footer {
+    flex: 0 0 auto;
+   }
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.center__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bold_text {
+    font-size: 32px;
+    line-height: 43px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    background-color: #17A2B8;
+    color: #FFFFFF;
+    padding: 217px 0;
+}
+
+.header__logo {
+    margin-bottom: 48px;
+}
+
+.header_h1 {
+    margin-bottom: 32px;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.header__date {
+    margin-bottom: 28px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.header__text {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.main__introduction,
+.footer {
+    background-color: #F8F9FA;
+}
+
+.main__introduction_center {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__introduction_half {
+    font-size: 16px;
+    line-height: 21px;
+    width: 50%;
+    text-align: center;
+    margin: 48px 0;
+}
+
+.main__introduction_text_left {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.main__introduction_half__block1,
+.main__introduction_half__block2,
+.main__introduction_half__block3 {
+    margin-bottom: 16px;
+}
+
+.main__introduction_form {
+    display: flex;
+}
+
+.main__introduction_form__block {
+    width: 40%;
+}
+
+.main__speakers {
+    padding: 48px 0;
+}
+
+.main__speakers_h2 {
+    margin-bottom: 32px;
+}
+
+.main__speakers_h2_small {
+    display: none;
+}
+
+.main__speakers__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__speakers__cards__item {
+    width: 217px;
+    text-align: center;
+    margin: 0 16px 24px 16px;
+}
+
+.main__speakers__cards__title {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
+}
+
+.main__speakers__cards__text {
+    font-size: 16px;
+    line-height: 21px;
+    font-style: italic;
+}
+
+.main__speakers__cards__logo,
+.main__speakers__cards__title,
+.main__speakers__cards__text {
+    margin-bottom: 8px;
+}
+
+.footer {
+    padding: 48px 0;
+}
+
+.footer__logo {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer__text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #BABABA;
+}
+
+@media (max-width: 769px)  {
+
+    header {
+        padding: 333px 0;
+    }
+
+    .main__introduction {
+        padding: 48px 0 42px 0;
+    }
+
+    .main__introduction_text_left {
+        padding-top: 48px;
+    }
+
+    .main__introduction_center {
+        display: block;
+        text-align: left;
+    }
+
+    .main__introduction_half {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+
+    .main__introduction_half__block3 {
+        margin: 0;
+    }
+
+    .main__speakers_h2 {
+        display: none;
+    }
+    
+    .main__speakers_h2_small {
+        display: block;
+    }
+
+    .center {
+        max-width: 768px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 321px){
+
+    header {
+        padding: 105px 0;
+    }
+
+
+    .main__introduction_half_mobile {
+        display: none;
+    }
+
+    .main__introduction {
+        background-color: #F8F9FA;
+        padding: 24px 0;
+    }
+
+    .main__introduction_text_left {
+        padding: 0;
+    }
+
+    .bold_text {
+        text-align: left;
+    }
+
+    
+
+    .main__speakers_h2_small {
+        text-align: left;
+        width: 90%;
+        margin:0 auto;
+        margin-bottom: 32px;
+    }
+
+    .center {
+        max-width: 320px;
+    }
+}
